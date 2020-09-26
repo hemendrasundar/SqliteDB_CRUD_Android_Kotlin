@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SQLite CRUD"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/et_empID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EMP ID"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/et_empname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EMP Name"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_empPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EMP Phone Number"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="insert"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="update"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="delete"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_read"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="read"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <ListView
+            android:layout_margin="10dp"
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
